@@ -1,5 +1,3 @@
-## 🟢 PHASE 1: Foundation & Core Basics
-> **Goal:** Understand how Java works and write basic programs.
 
 ### 📦 Module 1.1: Introduction to Java
 - What is Java & Why Learn It
@@ -338,7 +336,7 @@
 
 ---
 
-## 🔶 PHASE 8: Databases & JDBC
+## ==🔶 PHASE 8: Databases & JDBC==
 > **Goal:** Connect Java applications to databases.
 
 ### 📦 Module 8.1: SQL Fundamentals

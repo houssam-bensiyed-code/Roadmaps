@@ -1,4 +1,4 @@
-# 🏗️ Software Architect Expert Roadmap
+# 🏗️ Modern Software Engineering Mastery Roadmap (2025+)
 
 ---
 
@@ -9,12 +9,12 @@
 
 ### Module 1.1: Programming Mastery
 #### 1.1.1 Core Programming Proficiency
-- Master at least one primary language deeply (Java, C#, Python, or Go)
+- Master at least one primary language deeply (Java, C#, Python, Go, or TypeScript)
 - Understand memory management, concurrency, and runtime internals
 - Data structures & algorithms (Big-O, trees, graphs, hash maps, dynamic programming)
 - Generics, reflection, metaprogramming
 
-#### 1.1.2 Multi-Paradigm Programming
+#### ==1.1.2 Multi-Paradigm Programming==
 - Object-Oriented Programming (encapsulation, inheritance, polymorphism, abstraction)
 - Functional Programming (immutability, pure functions, higher-order functions, monads)
 - Reactive Programming (streams, backpressure, event-driven models)
@@ -29,7 +29,7 @@
 
 ---
 
-### Module 1.2: Software Design Fundamentals
+### ==Module 1.2: Software Design Fundamentals==
 #### 1.2.1 Design Principles
 - Separation of Concerns
 - High Cohesion / Low Coupling
@@ -62,7 +62,7 @@
 - Monorepo vs Polyrepo trade-offs
 - Semantic versioning and release management
 
-#### 1.3.2 Testing Foundations
+#### ==1.3.2 Testing Foundations==
 - Unit testing (AAA pattern, mocking, stubbing, faking)
 - Integration testing strategies
 - Test-Driven Development (TDD) - Red/Green/Refactor
@@ -78,7 +78,7 @@
 
 ---
 
-### Module 1.4: Infrastructure & Operations Literacy
+### ==Module 1.4: Infrastructure & Operations Literacy==
 #### 1.4.1 Networking Essentials
 - OSI model & TCP/IP stack
 - DNS, HTTP/HTTPS, TLS/SSL handshakes
@@ -101,12 +101,37 @@
 
 ---
 
+### 🏗️ Phase 1 Project: Production-Grade URL Shortener
+> Build a URL shortener service (like bit.ly) with:
+> - RESTful API with proper HTTP semantics and error handling
+> - PostgreSQL with proper schema design and indexing
+> - Redis caching layer for hot URLs
+> - Docker containerization with docker-compose
+> - Comprehensive test suite (unit + integration, TDD)
+> - CI/CD pipeline (GitHub Actions)
+> - Clean code applying SOLID principles and design patterns
+> - Structured logging and health check endpoints
+>
+> **Why:** Small enough to finish, complex enough to demonstrate all Phase 1 skills — clean code, design patterns, testing, databases, Docker, CI/CD.
+
+---
+
+### ✅ After Phase 1 — You Can:
+- [ ] Write clean, testable, maintainable code
+- [ ] Apply appropriate design patterns with justification
+- [ ] Design normalized/denormalized data models
+- [ ] Explain networking and infrastructure fundamentals
+- [ ] Set up CI/CD pipelines and containerized applications
+
+---
+---
+
 ## PHASE 2: ARCHITECTURAL THINKING (Intermediate)
 *Duration: ~6-9 months*
 
 ---
 
-### Module 2.1: Architectural Styles & Patterns
+### ==Module 2.1: Architectural Styles & Patterns==
 #### 2.1.1 Monolithic Architecture
 - Layered/N-tier architecture (presentation, business, data access)
 - Modular monolith (vertical slicing, module boundaries)
@@ -143,7 +168,7 @@
 
 ---
 
-### Module 2.2: Distributed Systems Fundamentals
+### ==Module 2.2: Distributed Systems Fundamentals==
 #### 2.2.1 Core Distributed Concepts
 - Fallacies of distributed computing (Peter Deutsch)
 - Consistency models (strong, eventual, causal, read-your-writes)
@@ -183,7 +208,7 @@
 
 ---
 
-### Module 2.3: API Design & Integration
+### ==Module 2.3: API Design & Integration==
 #### 2.3.1 API Design Excellence
 - REST maturity model (Richardson's levels 0–3)
 - RESTful API best practices (resource naming, versioning, pagination, filtering)
@@ -215,7 +240,7 @@
 
 ---
 
-### Module 2.4: Security Architecture
+### ==Module 2.4: Security Architecture==
 #### 2.4.1 Security Fundamentals
 - OWASP Top 10 (deep understanding)
 - Defense in depth
@@ -326,6 +351,35 @@
 
 ---
 
+### 🏗️ Phase 2 Project: Real-Time E-Commerce Platform
+> Build a distributed e-commerce system with:
+> - Modular monolith with clear bounded contexts (Catalog, Orders, Payments, Notifications)
+> - Event-driven communication between modules (Kafka or RabbitMQ)
+> - CQRS for the product catalog (write model + read-optimized projections)
+> - OAuth 2.0 + JWT authentication
+> - API Gateway with rate limiting
+> - PostgreSQL + Redis + Elasticsearch
+> - Full CI/CD pipeline with canary deployments
+> - OpenTelemetry distributed tracing
+> - Terraform for infrastructure
+> - Architecture Decision Records (ADRs) and C4 diagrams
+>
+> **Why:** Covers DDD, event-driven architecture, distributed systems patterns, security, DevOps, and observability in one cohesive project.
+
+---
+
+### ✅ After Phase 2 — You Can:
+- [ ] Choose and justify architectural styles for given requirements
+- [ ] Design resilient distributed systems
+- [ ] Model domains using DDD strategic and tactical patterns
+- [ ] Design secure, observable, and scalable systems
+- [ ] Create comprehensive API contracts
+- [ ] Facilitate Event Storming sessions
+- [ ] Write ADRs and create C4 diagrams
+
+---
+---
+
 ## PHASE 3: MASTERY & LEADERSHIP (Advanced)
 *Duration: ~6-12 months + ongoing*
 
@@ -424,15 +478,6 @@
 - Feature parity vs reimagination
 - Risk mitigation during migration
 - Replatform vs Refactor vs Rebuild vs Replace decision framework
-
-#### 3.3.4 AI/ML Architecture (Awareness Level)
-- ML pipeline architecture (MLOps)
-- Model serving patterns (batch, real-time, edge)
-- Feature stores
-- A/B testing and experimentation platforms
-- LLM integration patterns (RAG, fine-tuning, prompt engineering architecture)
-- AI gateway patterns
-- Ethical AI considerations in architecture
 
 ---
 
@@ -542,61 +587,22 @@
 
 ---
 
-## 📚 ESSENTIAL RESOURCES
-
-### Must-Read Books (In Order)
-| Phase | Book | Author |
-|-------|------|--------|
-| 1 | Clean Code | Robert C. Martin |
-| 1 | Design Patterns | Gang of Four |
-| 1 | Head First Design Patterns | Freeman & Robson |
-| 2 | Clean Architecture | Robert C. Martin |
-| 2 | Designing Data-Intensive Applications | Martin Kleppmann |
-| 2 | Domain-Driven Design | Eric Evans |
-| 2 | Building Microservices (2nd Ed.) | Sam Newman |
-| 2 | Enterprise Integration Patterns | Hohpe & Woolf |
-| 2 | Fundamentals of Software Architecture | Richards & Ford |
-| 3 | Software Architecture: The Hard Parts | Richards, Ford, et al. |
-| 3 | Building Evolutionary Architectures | Ford, Parsons, Kua |
-| 3 | Team Topologies | Skelton & Pais |
-| 3 | The Staff Engineer's Path | Tanya Reilly |
-| 3 | Technology Strategy Patterns | Hewitt |
-| 3 | Wardley Maps | Simon Wardley (free) |
-
-### Certifications (Optional but Valuable)
-- AWS Solutions Architect Professional / Azure Solutions Architect Expert
-- TOGAF 10 (for Enterprise Architecture track)
-- Kubernetes CKA/CKAD
-- Domain-Driven Design (DDD) certifications
-
-### Practice Platforms & Activities
-- System design practice (designing Twitter, Uber, YouTube, etc.)
-- Open-source contribution (study architectures of large projects)
-- Architecture katas (Neal Ford's exercises)
-- Write ADRs for your current projects
-- Attend and speak at meetups/conferences
-- Build a technology radar for your organization
-- Write a technical blog
+### 🏗️ Phase 3 Project: Multi-Region SaaS Platform
+> Architect and build a multi-tenant SaaS platform:
+> - Multi-tenant architecture with data isolation strategies
+> - Microservices deployed on Kubernetes (EKS/GKE) with Istio service mesh
+> - Event-driven backbone (Kafka) with CQRS and event sourcing
+> - Multi-region active-active deployment with global load balancing
+> - Terraform IaC for all infrastructure, GitOps with ArgoCD
+> - Full observability stack (OpenTelemetry, Prometheus, Grafana, Loki)
+> - Zero Trust security model, SOC2-ready controls
+> - Performance: load tested to 10K concurrent users with k6
+> - Complete documentation: C4 diagrams, ADRs, runbooks, RFC process
+> - FinOps dashboard for cloud cost tracking and optimization
+>
+> **Why:** This is the mastery capstone — it ties together distributed systems, cloud-native architecture, security, DevOps, observability, and architectural leadership.
 
 ---
-
-## 🎯 MILESTONES CHECKLIST
-
-### ✅ After Phase 1 — You Can:
-- [ ] Write clean, testable, maintainable code
-- [ ] Apply appropriate design patterns with justification
-- [ ] Design normalized/denormalized data models
-- [ ] Explain networking and infrastructure fundamentals
-- [ ] Set up CI/CD pipelines and containerized applications
-
-### ✅ After Phase 2 — You Can:
-- [ ] Choose and justify architectural styles for given requirements
-- [ ] Design resilient distributed systems
-- [ ] Model domains using DDD strategic and tactical patterns
-- [ ] Design secure, observable, and scalable systems
-- [ ] Create comprehensive API contracts
-- [ ] Facilitate Event Storming sessions
-- [ ] Write ADRs and create C4 diagrams
 
 ### ✅ After Phase 3 — You Can:
 - [ ] Design cloud-native architectures for complex domains
@@ -609,5 +615,245 @@
 - [ ] Mentor and grow other architects
 
 ---
+---
 
-> **⚡ Key Principle:** A great software architect never stops coding entirely, never stops learning, and always remembers that **architecture is about trade-offs, not best practices.** Every decision is a trade-off — your job is to make the *right* trade-offs for *your* context.
+## PHASE 4: AI-ERA ENGINEERING
+*Duration: ~4-6 months*
+
+---
+
+### Module 4.1: AI & LLM Foundations
+#### 4.1.1 Machine Learning Essentials (Engineer's Perspective)
+- Supervised vs unsupervised vs reinforcement learning (conceptual understanding)
+- Training vs inference lifecycle
+- Embeddings and vector representations (why they matter for everything)
+- Tokenization, context windows, and model parameters
+- Temperature, top-p, and sampling strategies
+- Cost economics of AI inference (input/output tokens, model tiers)
+
+#### 4.1.2 Large Language Models
+- Transformer architecture (attention mechanism — conceptual, not math-heavy)
+- Foundation models landscape (GPT, Claude, Gemini, Llama, Mistral)
+- Open-source vs closed-source trade-offs
+- Model size vs capability (when small models win)
+- Multimodal models (text, vision, audio, code)
+- Running local models (Ollama, vLLM, llama.cpp)
+
+#### 4.1.3 Prompt Engineering
+- Zero-shot, few-shot, chain-of-thought prompting
+- System prompts and role design
+- Structured output (JSON mode, function calling, constrained generation)
+- Prompt chaining and decomposition
+- Prompt evaluation and quality measurement
+- Prompt versioning and management
+
+---
+
+### Module 4.2: Retrieval-Augmented Generation (RAG)
+#### 4.2.1 RAG Architecture & Pipeline
+- Why RAG: grounding LLMs in your data (vs hallucination)
+- End-to-end pipeline: Ingest → Chunk → Embed → Store → Retrieve → Generate
+- Document loading (PDFs, web pages, databases, APIs, code repos)
+- Chunking strategies (fixed-size, semantic, recursive, parent-child)
+- Embedding models selection (OpenAI, Cohere, open-source: BGE, E5, Nomic)
+- Chunk size and overlap tuning
+
+#### 4.2.2 Vector Databases & Search
+- Vector databases (Pinecone, Weaviate, Qdrant, Chroma, pgvector)
+- Indexing algorithms (HNSW, IVF, flat search)
+- Hybrid search: combining vector + keyword search (BM25)
+- Metadata filtering and pre/post-filtering strategies
+- Re-ranking (cross-encoders, Cohere Rerank, ColBERT)
+- Embedding model benchmarking (MTEB leaderboard)
+
+#### 4.2.3 Advanced RAG Techniques
+- Query transformation (HyDE, query decomposition, step-back prompting)
+- Multi-index RAG and query routing
+- Graph RAG — knowledge graphs + vector search (Microsoft's approach)
+- Agentic RAG (retriever as a tool the agent decides to use)
+- RAG evaluation: retrieval metrics (recall@k, MRR) and generation quality (faithfulness, relevance)
+- RAG vs fine-tuning: decision framework for when to use which
+
+---
+
+### Module 4.3: AI Agents
+#### 4.3.1 Agent Fundamentals
+- What is an agent: perception → reasoning → action loop
+- ReAct pattern (Reasoning + Acting)
+- Tool use: teaching LLMs to call functions
+- Planning: task decomposition and step-by-step execution
+- Memory types: short-term (conversation), long-term (persistent), episodic
+
+#### 4.3.2 Agent Frameworks & Orchestration
+- LangChain / LangGraph (chains, agents, tools, state graphs)
+- CrewAI, AutoGen, OpenAI Agents SDK
+- Function calling patterns (OpenAI, Anthropic, Google)
+- Orchestration patterns: sequential, parallel, hierarchical
+- Human-in-the-loop: approval gates, escalation
+- Stateful agents with checkpointing and resumability
+
+#### 4.3.3 Multi-Agent Systems
+- Agent roles and specialization
+- Supervisor vs peer-to-peer topologies
+- Agent communication and context passing
+- Consensus and conflict resolution between agents
+- Practical architectures (coding agents, research agents, support agents)
+
+#### 4.3.4 Agent Tooling & Integration
+- Building custom tools (API wrappers, database queries, file operations)
+- Code execution sandboxes (E2B, Docker-based)
+- Browser automation as agent tools (Playwright)
+- MCP (Model Context Protocol) — connecting agents to external services
+- Agent observability and decision tracing (LangSmith, Arize)
+- Agent reliability: cost guards, timeout limits, max-iteration caps
+
+---
+
+### Module 4.4: Production AI Systems
+#### 4.4.1 LLM Application Architecture
+- LLM Gateway pattern (abstraction over multiple providers)
+- Streaming responses (SSE, WebSockets)
+- Semantic caching for LLM responses
+- Fallback chains: primary model → fallback → graceful degradation
+- Cost management: token tracking, model routing by query complexity
+- Latency optimization (streaming, batching, smaller models for simple tasks)
+
+#### 4.4.2 Evaluation & Testing
+- Evaluation frameworks (DeepEval, Ragas, promptfoo)
+- LLM-as-judge for automated evaluation
+- Regression testing for prompts and AI features
+- A/B testing AI features in production
+- Hallucination detection and mitigation strategies
+- Red-teaming and adversarial testing
+
+#### 4.4.3 Safety & Guardrails
+- Input guardrails: prompt injection detection, content filtering
+- Output guardrails: PII detection, toxicity filtering, fact-checking
+- Guardrail frameworks (Guardrails AI, NeMo Guardrails)
+- OWASP Top 10 for LLM Applications
+- Indirect prompt injection (data poisoning the context)
+- AI regulation awareness (EU AI Act, responsible AI principles)
+
+#### 4.4.4 MLOps for LLM Applications
+- Experiment tracking (MLflow, Weights & Biases)
+- CI/CD for AI features (evaluations as pipeline gates)
+- Monitoring in production: quality degradation, drift detection
+- Feedback loops: user signals → system improvement
+- Fine-tuning when needed: LoRA, QLoRA (decision framework + execution)
+- Model serving basics (vLLM, TGI, cloud-managed endpoints)
+
+---
+
+### Module 4.5: AI-Augmented Engineering
+#### 4.5.1 AI-Assisted Development
+- AI coding assistants (GitHub Copilot, Cursor, Cline, Windsurf)
+- Effective prompting for code generation
+- AI for code review, debugging, and refactoring
+- AI for test generation and test case discovery
+- Understanding limitations — when AI-generated code fails
+- Maintaining code quality standards with AI assistance
+
+#### 4.5.2 AI in the Software Lifecycle
+- AI-powered documentation generation
+- AI-enhanced codebase search and knowledge retrieval
+- Automated PR descriptions and changelog generation
+- AI in CI/CD: intelligent test selection, deployment risk scoring
+- AIOps: AI for monitoring, anomaly detection, incident response
+- Building internal AI developer tools for your team
+
+---
+
+### 🏗️ Phase 4 Project: AI Research Assistant
+> Build a production-grade AI research assistant:
+> - **RAG pipeline** ingesting multiple sources (PDFs, web pages, APIs)
+> - **Vector database** (pgvector or Qdrant) with hybrid search and re-ranking
+> - **Multi-agent system** (LangGraph):
+>   - Researcher agent: retrieves and gathers information
+>   - Analyst agent: synthesizes and compares findings
+>   - Writer agent: produces structured reports
+> - **LLM Gateway** with provider fallback and cost tracking
+> - **Streaming chat UI** (React/Next.js with SSE)
+> - **Guardrails**: prompt injection defense, PII filtering
+> - **Evaluation suite**: automated quality tests in CI/CD
+> - **Observability**: full agent trace logging
+> - **Feedback mechanism**: user thumbs up/down stored for analysis
+>
+> **Why:** Covers RAG, agents, production concerns, evaluation, and safety in one cohesive system.
+
+---
+
+### ✅ After Phase 4 — You Can:
+- [ ] Build production RAG pipelines with proper evaluation
+- [ ] Design and implement single and multi-agent systems
+- [ ] Integrate LLMs into production applications with guardrails
+- [ ] Evaluate AI system quality systematically
+- [ ] Manage AI costs, latency, and reliability in production
+- [ ] Use AI tools to accelerate your own development workflow
+- [ ] Make informed decisions: RAG vs fine-tuning vs prompt engineering
+- [ ] Architect AI-native features within larger software systems
+
+---
+---
+
+## 📚 ESSENTIAL RESOURCES
+
+### Must-Read Books (In Order)
+| Phase | Book | Author |
+|-------|------|--------|
+| 1 | Clean Code | Robert C. Martin |
+| 1 | Design Patterns | Gang of Four |
+| 1 | Head First Design Patterns | Freeman & Robson |
+| 1 | The Pragmatic Programmer (20th Anniversary) | Hunt & Thomas |
+| 2 | Clean Architecture | Robert C. Martin |
+| 2 | Designing Data-Intensive Applications | Martin Kleppmann |
+| 2 | Domain-Driven Design | Eric Evans |
+| 2 | Building Microservices (2nd Ed.) | Sam Newman |
+| 2 | Enterprise Integration Patterns | Hohpe & Woolf |
+| 2 | Fundamentals of Software Architecture | Richards & Ford |
+| 3 | Software Architecture: The Hard Parts | Richards, Ford, et al. |
+| 3 | Building Evolutionary Architectures | Ford, Parsons, Kua |
+| 3 | Team Topologies | Skelton & Pais |
+| 3 | The Staff Engineer's Path | Tanya Reilly |
+| 3 | Technology Strategy Patterns | Hewitt |
+| 3 | Wardley Maps | Simon Wardley (free) |
+| 4 | AI Engineering | Chip Huyen |
+| 4 | Designing Machine Learning Systems | Chip Huyen |
+| 4 | Building LLM Apps (O'Reilly) | Valentino Gagliardi |
+
+### Certifications (Optional but Valuable)
+- AWS Solutions Architect Professional / Azure Solutions Architect Expert
+- TOGAF 10 (for Enterprise Architecture track)
+- Kubernetes CKA/CKAD
+- Terraform Associate
+- Google Cloud ML Engineer / AWS ML Specialty (for AI track)
+
+### Practice Platforms & Activities
+- System design practice (designing Twitter, Uber, YouTube, etc.)
+- Open-source contribution (study architectures of large projects)
+- Architecture katas (Neal Ford's exercises)
+- Write ADRs for your current projects
+- LLM/AI experimentation (build small AI features weekly)
+- Attend and speak at meetups/conferences
+- Build a technology radar for your organization
+- Write a technical blog
+
+---
+
+## 🗺️ VISUAL ROADMAP SUMMARY
+
+```
+PHASE 1 (4-6 mo)           PHASE 2 (6-9 mo)           PHASE 3 (6-12 mo)          PHASE 4 (4-6 mo)
+─────────────────────  ─────────────────────────  ─────────────────────────  ─────────────────────────
+│ Programming Mastery│  │ Architectural Styles   │  │ Cloud-Native Deep     │  │ AI & LLM Foundations │
+│ Software Design    │  │ Distributed Systems    │  │ Data Architecture     │  │ RAG Systems          │
+│ Dev Practices      │→ │ API & Integration      │→ │ Advanced Concerns     │→ │ AI Agents            │
+│ Infra & Ops        │  │ Security Architecture  │  │ Documentation & Comms │  │ Production AI        │
+│                    │  │ DevOps & CI/CD         │  │ Leadership & Business │  │ AI-Augmented Eng     │
+│                    │  │ Domain-Driven Design   │  │ Specialization Tracks │  │                      │
+─────────────────────  ─────────────────────────  ─────────────────────────  ─────────────────────────
+  📦 URL Shortener      📦 E-Commerce Platform     📦 Multi-Region SaaS      📦 AI Research Assistant
+```
+
+---
+
+> **⚡ Key Principle:** A great software engineer in 2025+ never stops coding entirely, never stops learning, and always remembers that **architecture is about trade-offs, not best practices.** Every decision is a trade-off — your job is to make the *right* trade-offs for *your* context. The fundamentals haven't changed. The tools have multiplied. **Now you also need to know when an LLM solves the problem better than code — and when it doesn't.** Master both.

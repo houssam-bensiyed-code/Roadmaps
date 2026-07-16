@@ -1,3 +1,9 @@
+# 🐍 Python Mastery Roadmap — Phase 1: Foundations
+> Aligned with Phase 1 of the Software Engineering Mastery Roadmap
+> **Estimated Duration: 4–6 months**
+
+---
+
 ## 🟢 PHASE 1: Foundation & Core Basics
 > **Goal:** Understand how Python works and write basic programs.
 
@@ -62,7 +68,7 @@
 - Type Hints / Annotations (`def greet(name: str) -> str:`)
 - Docstrings & `help()`
 
-> ### 🛠 Phase 1 Project: **CLI-Based Expense Tracker**
+> ### 🛠 Phase 1 Milestone Project: **CLI-Based Expense Tracker**
 > Track daily expenses via console input. Categorize spending, calculate totals by category, show daily/weekly/monthly summaries, and display insights like "most spent category."
 
 ---
@@ -126,12 +132,12 @@
 - `__new__()` vs `__init__()`
 - Descriptors (`__get__`, `__set__`, `__delete__`)
 
-> ### 🛠 Phase 2 Project: **Library Management System**
+> ### 🛠 Phase 2 Milestone Project: **Library Management System**
 > Create `Book`, `Member`, `Librarian`, `Library` classes. Support borrowing, returning, searching, overdue tracking, and fine calculation using inheritance, polymorphism, and dataclasses.
 
 ---
 
-## 🟡 PHASE 3: Core Python Essentials
+## ==🟡 PHASE 3: Core Python Essentials==
 > **Goal:** Master essential Python modules, patterns, and techniques.
 
 ### 📦 Module 3.1: Advanced String & Text Processing
@@ -212,13 +218,13 @@
 - Introduction to `pyproject.toml`
 - Publishing to PyPI (Overview)
 
-> ### 🛠 Phase 3 Project: **Multi-Format Data Analyzer**
+> ### 🛠 Phase 3 Milestone Project: **Multi-Format Data Analyzer**
 > Build a CLI tool that reads data from CSV, JSON, and text files, performs statistical analysis (mean, median, mode, std dev), generates summaries using generators and itertools, and exports reports in multiple formats.
 
 ---
 
-## 🟠 PHASE 4: Advanced Python Features
-> **Goal:** Learn powerful and modern Python language features.
+## ==🟠 PHASE 4: Advanced Python Features==
+> **Goal:** Learn powerful and modern Python language features including concurrency, metaprogramming, and internals.
 
 ### 📦 Module 4.1: Decorators
 - Functions as First-Class Objects (Recap)
@@ -254,8 +260,9 @@
 - Async Context Managers (`async with`)
 - `aiohttp` (Async HTTP Client/Server)
 - `aiofiles` (Async File I/O)
-- `anyio` & `trio` (Alternative Async Frameworks)
+- `anyio` & `trio` (Alternative Async Frameworks — Awareness)
 - Async Best Practices & Common Pitfalls
+- Declarative vs Imperative Approaches in Python
 
 ### 📦 Module 4.4: Multithreading & Multiprocessing
 - **Threading:**
@@ -273,7 +280,18 @@
 - **Choosing:** Threading vs Multiprocessing vs Asyncio
 - `subprocess` Module (Running External Commands)
 
-### 📦 Module 4.5: Type Hints & Static Analysis
+### 📦 Module 4.5: Reactive Programming Concepts
+- Reactive Programming Principles (Streams, Backpressure, Event-Driven Models)
+- Async Generators as Reactive-Like Streams
+- `asyncio.Queue` as Backpressure Mechanism
+- Observer Pattern with `asyncio` Events
+- RxPY (ReactiveX for Python — Conceptual Awareness)
+  - Observables, Operators, Schedulers
+  - `pipe()`, `map()`, `filter()`, `merge()`, `flat_map()`
+- Reactive vs Imperative: When to Use What
+- Event-Driven Architecture Concepts in Python
+
+### 📦 Module 4.6: Type Hints & Static Analysis
 - Basic Type Hints (`int`, `str`, `float`, `bool`, `None`)
 - Complex Types (`List[int]`, `Dict[str, int]`, `Tuple[int, ...]`, `Set[str]`)
 - `Optional[T]` & `Union[T1, T2]`
@@ -288,7 +306,7 @@
 - `pyright` / `Pylance` (VS Code Integration)
 - `pydantic` (Runtime Data Validation — Intro)
 
-### 📦 Module 4.6: Metaprogramming
+### 📦 Module 4.7: Metaprogramming
 - Metaclasses Deep Dive (`type`, `__metaclass__`)
 - `__new__` vs `__init__` (Object Creation)
 - Descriptors (`__get__`, `__set__`, `__delete__`, `__set_name__`)
@@ -299,7 +317,7 @@
 - Code Generation & `exec()` / `eval()` (Use with Caution)
 - Abstract Base Classes Registration (`register`)
 
-### 📦 Module 4.7: Memory Management & Performance
+### 📦 Module 4.8: Memory Management & Performance
 - Python Memory Model (Everything is an Object)
 - Reference Counting & Garbage Collection
 - `gc` Module
@@ -312,12 +330,25 @@
 - Optimization Tips (List vs Generator, Dict Lookups, Local Variables)
 - `Cython` & `ctypes` (Intro — Calling C from Python)
 
-> ### 🛠 Phase 4 Project: **Async API Aggregator**
-> Build an async app that concurrently fetches data from multiple public APIs (weather, news, crypto prices) using `aiohttp`, processes responses with decorators and type hints, caches results, and presents a unified dashboard in the terminal.
+### 📦 Module 4.9: Modern Python Features (Python 3.10–3.13+)
+- Structural Pattern Matching (`match`-`case`) — Python 3.10 (Revisited Deeply)
+- `ParamSpec` & `TypeVarTuple` — Python 3.10
+- Exception Groups & `except*` — Python 3.11
+- `tomllib` (Built-in TOML Parser) — Python 3.11
+- Performance Improvements (Faster CPython) — Python 3.11+
+- `type` Statement (Type Alias) — Python 3.12
+- f-String Improvements — Python 3.12
+- `@override` Decorator (`typing`) — Python 3.12
+- Per-Interpreter GIL — Python 3.12
+- Free-Threaded Python (No GIL!) — Python 3.13+
+- JIT Compiler (Experimental) — Python 3.13+
+
+> ### 🛠 Phase 4 Milestone Project: **Async API Aggregator**
+> Build an async app that concurrently fetches data from multiple public APIs (weather, news, crypto prices) using `aiohttp`, processes responses with decorators and type hints, caches results with `lru_cache`, uses reactive-style event streams, and presents a unified dashboard in the terminal.
 
 ---
 
-## 🔴 PHASE 5: Data Structures & Algorithms in Python
+## ==🔴 PHASE 5: Data Structures & Algorithms in Python==
 > **Goal:** Strengthen problem-solving skills using Python.
 
 ### 📦 Module 5.1: Complexity Analysis
@@ -349,32 +380,46 @@
 - Sliding Window, Two Pointers
 - Bit Manipulation
 
-> ### 🛠 Phase 5 Project: **LeetCode Problem Solver Framework**
+> ### 🛠 Phase 5 Milestone Project: **LeetCode Problem Solver Framework**
 > Build a testing framework that lets you write algorithm solutions, automatically tests them against multiple test cases, benchmarks execution time, compares brute force vs optimized solutions, and generates performance reports.
 
 ---
 
-## 🟣 PHASE 6: Design Patterns & Clean Code
-> **Goal:** Write professional, maintainable, and Pythonic code.
+## ==🟣 PHASE 6: Design Principles, Patterns & Clean Code==
+> **Goal:** Write professional, maintainable, and Pythonic code using proven principles and patterns.
 
-### 📦 Module 6.1: Pythonic Code & Principles
+### 📦 Module 6.1: Pythonic Code & Clean Code Practices
 - The Zen of Python (`import this`)
 - EAFP vs LBYL (Ask Forgiveness vs Look Before You Leap)
 - Pythonic Idioms & Anti-Patterns
 - DRY, KISS, YAGNI
 - PEP 8 Style Guide
 - PEP 20 (The Zen)
-- Writing Readable Code
+- Writing Readable & Self-Documenting Code
 - Docstrings (Google, NumPy, Sphinx Styles)
+- Code Smells & Refactoring Techniques (Martin Fowler's Catalog)
+- Meaningful Naming Conventions
+- Function & Class Design
+- Proper Error Handling Design
+- Code Reviews Best Practices
 
-### 📦 Module 6.2: SOLID Principles in Python
+### 📦 Module 6.2: SOLID Principles in Python (Deep Understanding with Real Examples)
 - Single Responsibility Principle (SRP)
 - Open/Closed Principle (OCP)
 - Liskov Substitution Principle (LSP)
 - Interface Segregation Principle (ISP) — via ABCs & Protocols
 - Dependency Inversion Principle (DIP)
 
-### 📦 Module 6.3: Creational Patterns
+### 📦 Module 6.3: Design Principles (Beyond SOLID)
+- Separation of Concerns
+- High Cohesion / Low Coupling
+- Composition over Inheritance
+- Dependency Inversion & Inversion of Control
+- Law of Demeter (Principle of Least Knowledge)
+- Principle of Least Astonishment
+- Information Hiding (Parnas)
+
+### 📦 Module 6.4: Creational Patterns
 - Singleton Pattern (Module-Level, `__new__`, Metaclass)
 - Factory Method Pattern
 - Abstract Factory Pattern
@@ -382,50 +427,50 @@
 - Prototype Pattern (`copy.deepcopy`)
 - Borg / Monostate Pattern (Pythonic Singleton)
 
-### 📦 Module 6.4: Structural Patterns
+### 📦 Module 6.5: Structural Patterns
 - Adapter Pattern
+- Bridge Pattern
+- Composite Pattern
 - Decorator Pattern (Already Native in Python!)
 - Facade Pattern
-- Proxy Pattern
-- Composite Pattern
 - Flyweight Pattern
+- Proxy Pattern
 
-### 📦 Module 6.5: Behavioral Patterns
-- Observer Pattern (& `signal` Libraries)
+### 📦 Module 6.6: Behavioral Patterns
 - Strategy Pattern (Functions as Strategies — Pythonic)
+- Observer Pattern (& `signal` Libraries)
 - Command Pattern
-- Template Method Pattern
-- Iterator Pattern (Built-in with `__iter__`)
 - State Pattern
-- Chain of Responsibility
+- Template Method Pattern
+- Chain of Responsibility Pattern
 - Mediator Pattern
+- Visitor Pattern
+- Iterator Pattern (Built-in with `__iter__`)
 
-### 📦 Module 6.6: Architectural Patterns
-- Repository Pattern
-- Service Layer Pattern
-- Dependency Injection (Manual & `dependency-injector` Library)
-- Clean Architecture Overview
-- Hexagonal Architecture (Ports & Adapters)
-- CQRS (Command Query Responsibility Segregation)
+### 📦 Module 6.7: Concurrency Patterns
+- Producer-Consumer Pattern (`asyncio.Queue`, `queue.Queue`)
+- Read-Write Lock Pattern (`threading.RLock`)
+- Thread Pool Pattern (`concurrent.futures.ThreadPoolExecutor`)
+- Future/Promise Pattern (`concurrent.futures.Future`, `asyncio.Future`)
+- Actor Model Concepts (Awareness)
 
-> ### 🛠 Phase 6 Project: **Plugin-Based CLI Tool Framework**
-> Build an extensible CLI framework where users can create plugins (commands) that auto-register. Use Factory, Strategy, Observer, and Template Method patterns. Follow SOLID and Pythonic principles.
+### 📦 Module 6.8: Anti-Patterns & When NOT to Use Patterns
+- Common Anti-Patterns (God Class, Spaghetti Code, Golden Hammer, Lava Flow)
+- Pythonic Anti-Patterns (Overusing Classes When Functions Suffice, Unnecessary Metaclasses)
+- Over-Engineering with Patterns
+- Recognizing When a Pattern Adds Unnecessary Complexity
+- Pattern Selection Decision Framework
+- "Simple is Better Than Complex" — When to Just Write Simple Code
+
+> ### 🛠 Phase 6 Milestone Project: **Plugin-Based CLI Tool Framework**
+> Build an extensible CLI framework where users can create plugins (commands) that auto-register. Use Factory, Strategy, Observer, Chain of Responsibility, and Template Method patterns. Apply SOLID and design principles throughout. Include comprehensive code review checklist.
 
 ---
 
-## ⚫ PHASE 7: Testing, Tooling & DevOps Basics
-> **Goal:** Learn the professional Python development ecosystem.
+## ==⚫ PHASE 7: Testing, Build Tools & Version Control==
+> **Goal:** Master professional Python development practices — testing, tooling, and collaborating.
 
-### 📦 Module 7.1: Code Quality Tools
-- Linters: `flake8`, `pylint`, `ruff` (Fast!)
-- Formatters: `black` (Opinionated), `autopep8`, `yapf`
-- Import Sorting: `isort`
-- Type Checking: `mypy`, `pyright`
-- Security: `bandit`, `safety`
-- Pre-commit Hooks (`pre-commit` Framework)
-- `pyproject.toml` Configuration
-
-### 📦 Module 7.2: Unit Testing
+### 📦 Module 7.1: Unit Testing
 - `unittest` Module (Built-in)
   - `TestCase`, `setUp`, `tearDown`
   - Assertions (`assertEqual`, `assertTrue`, `assertRaises`)
@@ -440,67 +485,122 @@
   - `Mock`, `MagicMock`, `patch`
   - `side_effect`, `return_value`
   - Mocking External APIs & Databases
-- Test-Driven Development (TDD) Workflow
-- Code Coverage (`pytest-cov`, `coverage.py`)
-- Integration Testing Basics
-- Property-Based Testing (`hypothesis`)
+  - AAA Pattern (Arrange, Act, Assert)
+- Test-Driven Development (TDD) — Red/Green/Refactor
+- Code Coverage (`pytest-cov`, `coverage.py`): Metrics and Their Limitations
 
-### 📦 Module 7.3: Logging & Debugging
+### 📦 Module 7.2: Integration Testing & Advanced Testing
+- Integration Testing Strategies
+- Behavior-Driven Development (BDD):
+  - `behave` (Gherkin Syntax)
+  - `pytest-bdd`
+- Test Pyramid (Unit → Integration → E2E)
+- Testing Anti-Patterns
+- Property-Based Testing (`hypothesis`)
+- Testcontainers for Python (`testcontainers-python`)
+  - PostgreSQL, Redis, MongoDB, Kafka Containers
+- Writing Testable Code (Dependency Injection for Testability)
+- Mutation Testing (`mutmut` — Awareness)
+
+### 📦 Module 7.3: Code Quality Tools
+- Linters: `flake8`, `pylint`, `ruff` (Fast!)
+- Formatters: `black` (Opinionated), `autopep8`, `yapf`
+- Import Sorting: `isort`
+- Type Checking: `mypy`, `pyright`
+- Security Scanning: `bandit`, `safety`
+- Pre-commit Hooks (`pre-commit` Framework)
+- `pyproject.toml` Unified Configuration
+
+### 📦 Module 7.4: Build Tools & Dependency Management
+- `pip` Deep Dive
+- Virtual Environments (`venv`, `virtualenv`, `conda`)
+- `requirements.txt` vs `pyproject.toml`
+- `poetry` (Modern Dependency Management — Preferred)
+  - `pyproject.toml`, Lock Files, Dependency Groups
+  - Publishing to PyPI
+- `hatch` & `flit` (Build Backends — Awareness)
+- Semantic Versioning and Release Management
+- `Makefile` / `taskipy` for Task Automation
+- `tox` (Testing Across Python Versions)
+- Dependency Vulnerability Scanning (`safety`, `pip-audit`)
+- Reproducible Builds (Lock Files, Pinned Dependencies)
+
+### 📦 Module 7.5: Version Control Mastery
+- Git Internals (Objects, Refs, DAG)
+- Branching Strategies (GitFlow, Trunk-Based Development, GitHub Flow)
+- Monorepo vs Polyrepo Trade-offs
+- Advanced Git (Rebase, Cherry-Pick, Bisect, Stash, Hooks)
+- GitHub / GitLab Collaboration (PRs, Code Reviews, Protected Branches)
+- `.gitignore` for Python Projects
+- Conventional Commits
+
+### 📦 Module 7.6: CI/CD Foundations
+- Continuous Integration Best Practices
+- Pipeline-as-Code (GitHub Actions)
+- Pipeline Stages (Lint → Type Check → Test → Security Scan → Package)
+- Automated Testing in CI Pipelines
+- Quality Gates (Coverage Thresholds, Type Checking, Linting)
+- Dependency Vulnerability Scanning in CI (`safety`, `pip-audit`, Snyk)
+- Publishing to PyPI from CI
+
+### 📦 Module 7.7: Logging & Debugging
 - `print()` vs `logging` Module
 - Log Levels (`DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`)
 - Handlers (Console, File, Rotating, Timed)
 - Formatters & Filters
-- `structlog` (Structured Logging)
+- Structured Logging (`structlog`)
 - `loguru` (Modern Logging Library)
 - Debugging with IDE (Breakpoints, Watch, Evaluate)
 - `pdb` (Python Debugger) & `breakpoint()`
 - `icecream` (`ic()` for Quick Debugging)
 
-### 📦 Module 7.4: Package Management & Build Tools
-- `pip` Deep Dive
-- Virtual Environments (`venv`, `virtualenv`, `conda`)
-- `requirements.txt` vs `pyproject.toml`
-- `poetry` (Modern Dependency Management)
-- `pipenv` (Alternative)
-- `hatch` & `flit` (Build Backends)
-- Building & Publishing Packages to PyPI
-- Semantic Versioning
-- `Makefile` for Task Automation
-- `tox` (Testing Across Python Versions)
-
-### 📦 Module 7.5: Version Control
-- Git Fundamentals (init, add, commit, branch, merge, rebase)
-- Branching Strategies (Git Flow, Trunk-Based)
-- GitHub / GitLab Collaboration
-- `.gitignore` for Python Projects
-- Pull Requests & Code Reviews
-- Conventional Commits
-
-> ### 🛠 Phase 7 Project: **URL Shortener (Fully Tested & Packaged)**
-> Build a URL shortener library + CLI with comprehensive pytest tests, mocking, 90%+ code coverage, structured logging, type hints verified by mypy, formatted by black, linted by ruff, and published as a Python package.
+> ### 🛠 Phase 7 Milestone Project: **URL Shortener (Fully Tested & Packaged)**
+> Build a URL shortener library + CLI with comprehensive pytest tests (TDD), integration tests with testcontainers, BDD scenarios with `pytest-bdd`, >85% code coverage, structured logging with `structlog`, type hints verified by `mypy`, formatted by `black`, linted by `ruff`, pre-commit hooks, CI/CD with GitHub Actions, and published as a Python package via `poetry`.
 
 ---
 
-## 🔶 PHASE 8: Databases & Data Access
-> **Goal:** Connect Python applications to databases.
+## ==🔶 PHASE 8: Databases & Data Modeling==
+> **Goal:** Understand data modeling, master SQL, connect Python to databases, and understand database internals.
 
-### 📦 Module 8.1: SQL Fundamentals
+### 📦 Module 8.1: Data Modeling Fundamentals
+- Entity-Relationship Diagrams (ERD)
+- Relational Modeling (Normalization: 1NF–5NF)
+- Denormalization Trade-offs
+- Document Modeling Concepts (NoSQL Patterns)
+- Graph Data Modeling Concepts
+- Data Modeling for Analytics (Star Schema, Snowflake Schema — Awareness)
+
+### 📦 Module 8.2: SQL Mastery
 - DDL, DML, DCL, TCL
 - CRUD Operations
-- Joins, Subqueries, Aggregations
-- Indexing & Normalization Basics
+- Joins (INNER, LEFT, RIGHT, FULL, CROSS, Self-Joins)
+- Subqueries & Common Table Expressions (CTEs)
+- Aggregations & Window Functions
+- Views, Stored Procedures, Triggers (Awareness)
 - PostgreSQL / MySQL / SQLite
 
-### 📦 Module 8.2: SQLite & Raw Database Access
-- `sqlite3` Module (Built-in)
-- Connecting, Creating Tables, CRUD
-- Parameterized Queries (Preventing SQL Injection)
-- Transactions (`commit`, `rollback`)
-- Context Managers for Connections
-- `psycopg2` / `psycopg3` (PostgreSQL)
-- `mysql-connector-python` / `PyMySQL` (MySQL)
+### 📦 Module 8.3: RDBMS Internals & Advanced Concepts
+- Indexing Deep Dive (B-Tree, B+Tree, Hash Index, Composite Index)
+- Query Plans & `EXPLAIN` / `EXPLAIN ANALYZE`
+- ACID Properties (Atomicity, Consistency, Isolation, Durability)
+- Isolation Levels (Read Uncommitted, Read Committed, Repeatable Read, Serializable)
+- Transactions & MVCC (Multi-Version Concurrency Control)
+- Connection Pooling Concepts
+- Replication Basics (Leader-Follower)
+- Sharding Basics (Concepts & Trade-offs)
 
-### 📦 Module 8.3: SQLAlchemy (ORM)
+### 📦 Module 8.4: Python Database Access (Raw)
+- `sqlite3` Module (Built-in)
+  - Connecting, Creating Tables, CRUD
+  - Parameterized Queries (Preventing SQL Injection)
+  - Transactions (`commit`, `rollback`)
+  - Context Managers for Connections
+- `psycopg` / `psycopg2` (PostgreSQL)
+  - Sync and Async Access
+  - Connection Pooling (`psycopg_pool`)
+- `PyMySQL` / `mysql-connector-python` (MySQL — Awareness)
+
+### 📦 Module 8.5: SQLAlchemy (ORM)
 - What is SQLAlchemy & ORM Concepts
 - SQLAlchemy Core vs ORM
 - Engine, Session, Connection
@@ -509,336 +609,138 @@
 - Relationships (`relationship`, `ForeignKey`)
   - One-to-One, One-to-Many, Many-to-Many
 - CRUD Operations with ORM
-- Querying (`query`, `filter`, `filter_by`, `join`)
-- SQLAlchemy 2.0 Style (Modern)
+- Querying (`select`, `filter`, `filter_by`, `join`)
+- SQLAlchemy 2.0 Style (Modern — `select()` API)
 - Migrations with Alembic
   - `alembic init`, `revision`, `upgrade`, `downgrade`
   - Auto-Generating Migrations
-- Eager vs Lazy Loading
+- Eager vs Lazy Loading (N+1 Problem)
 - Hybrid Properties
 - Events & Hooks
 
-### 📦 Module 8.4: NoSQL Databases
-- MongoDB with `pymongo`
+### 📦 Module 8.6: NoSQL & Distributed Data Concepts
+- NoSQL Categories (Document, Key-Value, Column-Family, Graph, Time-Series)
+- When to Use SQL vs NoSQL
+- CAP Theorem and PACELC
+- MongoDB with `pymongo`:
   - Collections, Documents, CRUD
   - Queries, Aggregation Pipeline
   - Indexing
-- `motor` (Async MongoDB)
-- Redis with `redis-py`
+- `motor` (Async MongoDB — Awareness)
+- Redis with `redis-py`:
   - Key-Value Operations
   - Data Structures (Lists, Sets, Hashes, Sorted Sets)
   - Pub/Sub
-  - Caching Patterns
-- ODM: `mongoengine` / `beanie` (Async)
+  - Caching Patterns (Cache-Aside)
+  - TTL & Expiration
+- Polyglot Persistence Concepts
 
-> ### 🛠 Phase 8 Project: **Blog Engine Database Layer**
-> Build a complete database layer for a blog with Users, Posts, Comments, Tags, and Categories using SQLAlchemy ORM, Alembic migrations, complex queries, and Redis caching for hot posts.
-
----
-
-## 🔷 PHASE 9: Web Development with Python
-> **Goal:** Build modern web applications and REST APIs.
-
-### 📦 Module 9.1: Web Fundamentals
-- HTTP Protocol (Methods, Status Codes, Headers)
-- REST Principles & API Design
-- `requests` Library (Making HTTP Calls)
-- `httpx` (Modern Async HTTP Client)
-- JSON & API Communication
-- Authentication (API Keys, OAuth, JWT)
-
-### 📦 Module 9.2: Flask (Lightweight Framework)
-- Flask Setup & Project Structure
-- Routes & Views
-- Request & Response Objects
-- Templates (Jinja2)
-- Static Files
-- Blueprints (Modular Applications)
-- Flask-RESTful / Flask-Smorest (REST APIs)
-- Flask-SQLAlchemy (Database Integration)
-- Flask-Migrate (Alembic Integration)
-- Flask-JWT-Extended (Authentication)
-- Flask-Marshmallow (Serialization)
-- Error Handling
-- Testing Flask Apps
-
-### 📦 Module 9.3: FastAPI (Modern Async Framework) ⭐
-- Why FastAPI & Its Advantages
-- Installation & Project Structure
-- Path Operations (`@app.get`, `@app.post`, `@app.put`, `@app.delete`)
-- Path Parameters & Query Parameters
-- Request Body with Pydantic Models
-- Response Models & Status Codes
-- Data Validation (Pydantic V2)
-  - Validators (`@field_validator`, `@model_validator`)
-  - Nested Models, `Optional`, `Field()`
-- Dependency Injection System
-- Middleware
-- Background Tasks
-- File Upload & Download
-- Authentication & Authorization (JWT, OAuth2)
-  - OAuth2 Password Flow
-  - JWT Token Creation & Verification
-  - Protected Routes
-- Database Integration (SQLAlchemy + Async)
-- Async Endpoints
-- WebSockets
-- Error Handling (`HTTPException`, Custom Handlers)
-- CORS Configuration
-- API Versioning
-- Testing FastAPI (`TestClient`, `httpx`)
-- OpenAPI / Swagger Docs (Auto-Generated!)
-
-### 📦 Module 9.4: Django (Full-Stack Framework)
-- Django Philosophy ("Batteries Included")
-- Project Structure (`startproject`, `startapp`)
-- Models & Django ORM
-  - Fields, Relationships, Migrations
-  - QuerySet API (`filter`, `exclude`, `annotate`, `aggregate`)
-  - Managers & Custom QuerySets
-- Views (Function-Based & Class-Based)
-- URL Routing
-- Templates & Template Tags
-- Forms & ModelForms
-- Django Admin (Auto-Generated Admin Panel)
-- Authentication System (Built-in)
-- Django REST Framework (DRF) ⭐
-  - Serializers (ModelSerializer, Custom)
-  - ViewSets & Routers
-  - Authentication (Token, JWT, Session)
-  - Permissions & Throttling
-  - Pagination, Filtering (`django-filter`), Searching, Ordering
-  - Nested Serializers
-  - File Upload
-- Django Signals
-- Celery Integration (Async Tasks)
-- Django Channels (WebSockets)
-- Testing Django Apps
-
-### 📦 Module 9.5: API Advanced Concepts
-- Pagination Strategies (Offset, Cursor, Keyset)
-- Rate Limiting
-- Caching Strategies (Redis, In-Memory)
-- API Documentation Best Practices
-- GraphQL with Python (`strawberry`, `graphene`) — Overview
-- gRPC with Python (`grpcio`) — Overview
-
-> ### 🛠 Phase 9 Project: **Full-Stack Task Management API**
-> Build with **FastAPI**:
-> - User registration/login (JWT + Refresh Tokens)
-> - CRUD for projects, tasks, subtasks
-> - Role-based access (Admin, Manager, Member)
-> - Task assignment, status tracking, due dates
-> - File attachments
-> - Real-time notifications (WebSockets)
-> - Pagination, filtering, sorting
-> - Background email notifications
-> - SQLAlchemy + PostgreSQL + Alembic migrations
-> - Redis caching
-> - Comprehensive test suite
-> - Auto-generated Swagger docs
+> ### 🛠 Phase 8 Milestone Project: **Blog Engine Database Layer**
+> Build a complete database layer for a blog with Users, Posts, Comments, Tags, and Categories using SQLAlchemy ORM (2.0 style), Alembic migrations, proper schema design with normalization, indexing strategies, complex queries with `EXPLAIN ANALYZE`, Redis caching for hot posts, and query performance benchmarks.
 
 ---
 
-## 💎 PHASE 10: Specialization Tracks
-> **Goal:** Choose your path and go deep.
+## ==🔷 PHASE 9: Networking, Infrastructure & Operations==
+> **Goal:** Understand networking, operating systems, containerization, and infrastructure fundamentals.
 
-### 📦 Module 10.1: DevOps & Deployment
-- Docker (Dockerfile for Python Apps, Multi-Stage Builds)
-- Docker Compose
-- CI/CD (GitHub Actions, GitLab CI)
-- Gunicorn / Uvicorn (Production ASGI/WSGI Servers)
-- Nginx as Reverse Proxy
-- Deploying to AWS (EC2, Lambda, ECS) / GCP / Azure
-- Deploying to Heroku / Railway / Render / Fly.io
-- Environment Variables & Secrets Management
-- Monitoring (Prometheus + Grafana)
-- Logging Aggregation (ELK Stack, Loki)
+### 📦 Module 9.1: Networking Essentials
+- OSI Model & TCP/IP Stack
+- DNS Resolution
+- HTTP/HTTPS Protocol Deep Dive (Methods, Headers, Status Codes)
+- TLS/SSL Handshakes & Certificates
+- Load Balancers (L4 vs L7)
+- CDNs and Reverse Proxies
+- WebSockets (Concepts)
+- gRPC & Protocol Buffers (Concepts)
+- HTTP/2 and HTTP/3 (QUIC) — Awareness
 
-### 📦 Module 10.2: Microservices with Python
-- Monolith vs Microservices
-- Service Decomposition
-- Inter-Service Communication (REST, gRPC, Message Queues)
-- API Gateway (Kong, Traefik)
-- Message Brokers:
-  - RabbitMQ (`pika`, `aio-pika`)
-  - Apache Kafka (`confluent-kafka`, `aiokafka`)
-  - Celery (Distributed Task Queue)
-- Event-Driven Architecture
-- Saga Pattern
-- Circuit Breaker (`pybreaker`, `tenacity` for retries)
-- Distributed Tracing (OpenTelemetry, Jaeger)
-- Service Mesh (Istio — Conceptual)
+### 📦 Module 9.2: Python Networking & HTTP
+- `socket` Module:
+  - Building a Simple TCP Client/Server
+  - UDP Client/Server
+- `http.server` Module (Built-in HTTP Server)
+- `requests` Library (Sync HTTP Client)
+- `httpx` (Modern Async/Sync HTTP Client)
+- Making HTTP Requests from Python (GET, POST, Headers, Auth)
+- REST Principles & HTTP Semantics
 
-### 📦 Module 10.3: Data Science & Analytics Track 📊
-- NumPy (Arrays, Broadcasting, Vectorization)
-- Pandas (DataFrames, Series, Data Manipulation)
-  - Reading/Writing (CSV, Excel, SQL, JSON)
-  - Filtering, Grouping, Merging, Pivoting
-  - Handling Missing Data
-  - Time Series
-- Data Visualization:
-  - Matplotlib (Basic Plots)
-  - Seaborn (Statistical Plots)
-  - Plotly (Interactive Plots)
-- Jupyter Notebooks
-- Statistical Analysis (`scipy.stats`)
-- Web Scraping:
-  - `BeautifulSoup` + `requests`
-  - `Scrapy` (Framework)
-  - `Selenium` / `Playwright` (Browser Automation)
+### 📦 Module 9.3: Operating Systems & Linux Fundamentals
+- Linux Basics (File System, Permissions, Users)
+- Essential Commands (Navigation, File Manipulation, Process Management)
+- Package Management (apt, yum)
+- Shell Scripting Basics
+- Processes, Signals, and Systemd
+- Environment Variables and Configuration
+- SSH and Remote Access
+- Python's `os`, `subprocess`, `shutil` for System Interaction
 
-### 📦 Module 10.4: Machine Learning Track 🤖
-- Scikit-Learn
-  - Supervised Learning (Regression, Classification)
-  - Unsupervised Learning (Clustering, Dimensionality Reduction)
-  - Model Evaluation & Cross-Validation
-  - Feature Engineering & Pipelines
-- Deep Learning:
-  - TensorFlow / Keras
-  - PyTorch
-  - Neural Networks, CNNs, RNNs, Transformers
-- NLP:
-  - NLTK, SpaCy
-  - Hugging Face Transformers
-  - LLM Integration (OpenAI API, LangChain)
-- MLOps:
-  - MLflow (Experiment Tracking)
-  - Model Serving (FastAPI + ML Model)
-  - Docker for ML
+### 📦 Module 9.4: Containers & Docker
+- Virtual Machines vs Containers
+- Docker Fundamentals (Images, Containers, Layers)
+- Writing Dockerfiles (for Python Applications)
+  - Choosing Base Images (`python:3.12-slim`, `python:3.12-alpine`)
+  - Multi-Stage Builds for Python
+  - `.dockerignore` for Python
+  - Installing Dependencies (`requirements.txt` / `poetry`)
+  - Non-Root User, Security Best Practices
+- Docker Networking (Bridge, Host, Custom Networks)
+- Docker Volumes (Persistent Data)
+- Docker Compose (Multi-Container Applications)
+- Dockerizing a Python Application
+  - WSGI Server (Gunicorn) / ASGI Server (Uvicorn) in Docker
+  - Health Checks in Docker
+- Docker Best Practices (Layer Caching, Image Size Optimization)
 
-### 📦 Module 10.5: Automation & Scripting Track 🤖
-- System Automation (`os`, `shutil`, `subprocess`, `pathlib`)
-- Web Scraping (`BeautifulSoup`, `Scrapy`, `Selenium`)
-- Excel Automation (`openpyxl`, `xlsxwriter`)
-- PDF Manipulation (`PyPDF2`, `reportlab`)
-- Email Automation (`smtplib`, `email`)
-- Task Scheduling (`schedule`, `APScheduler`, `cron`)
-- GUI Automation (`pyautogui`)
-- Network Automation (`paramiko`, `netmiko`)
-- CLI Tools (`click`, `typer`, `argparse`)
+### 📦 Module 9.5: Container Orchestration Basics
+- Why Orchestration? (Problems Docker Alone Doesn't Solve)
+- Kubernetes Core Concepts (Pods, Services, Deployments, Namespaces)
+- `kubectl` Basics
+- YAML Manifests (Awareness)
+- ConfigMaps and Secrets (Awareness)
+- Kubernetes vs Docker Compose — When to Use What
 
-### 📦 Module 10.6: Modern Python Features (Python 3.10–3.13+)
-- Structural Pattern Matching (`match`-`case`) — Python 3.10
-- `ParamSpec` & `TypeVarTuple` — Python 3.10
-- Exception Groups & `except*` — Python 3.11
-- `tomllib` (Built-in TOML Parser) — Python 3.11
-- Performance Improvements (Faster CPython) — Python 3.11+
-- `type` Statement (Type Alias) — Python 3.12
-- f-String Improvements — Python 3.12
-- `@override` Decorator (`typing`) — Python 3.12
-- Per-Interpreter GIL — Python 3.12
-- Free-Threaded Python (No GIL!) — Python 3.13+
-- JIT Compiler (Experimental) — Python 3.13+
+> ### 🛠 Phase 9 Milestone Project: **Containerized Python TCP Chat Server**
+> Build a multi-client chat server using Python `socket` and `asyncio`. Dockerize it with a multi-stage Dockerfile. Create a docker-compose setup with the chat server + Redis (for message persistence/pub-sub) + PostgreSQL (for user accounts). Deploy locally using Docker Compose. Include structured logging and health check endpoints.
 
-> ### 🛠 Phase 10 Project: Choose Based on Your Track
+---
+
+## 🏗️ CAPSTONE PROJECT: Production-Grade URL Shortener
+> **This is the Phase 1 capstone that ties everything together.**
 >
-> **🌐 Web/Backend Track:** **Microservices E-Commerce Platform**
-> - User Service (FastAPI + JWT)
-> - Product Service (FastAPI + PostgreSQL)
-> - Order Service (Saga Pattern + Celery)
-> - Notification Service (RabbitMQ + Email)
-> - API Gateway (Traefik)
-> - Redis Caching, Docker Compose, CI/CD, OpenTelemetry
+> Build a URL shortener service (like bit.ly) with:
+> - **Clean Python code** applying SOLID principles and design patterns
+> - **RESTful API** with proper HTTP semantics and error handling (using lightweight framework — `http.server` or minimal `aiohttp`)
+> - **PostgreSQL** with proper schema design, normalization, and indexing (SQLAlchemy + Alembic)
+> - **Redis** caching layer for hot URLs
+> - **Docker** containerization with docker-compose (app + PostgreSQL + Redis)
+> - **Comprehensive test suite** (unit + integration tests with testcontainers, TDD approach, >85% coverage)
+> - **CI/CD pipeline** (GitHub Actions: lint → type-check → test → security-scan → docker build)
+> - **Structured logging** with `structlog` and health check endpoints
+> - **Type hints** verified by `mypy`, formatted by `black`, linted by `ruff`
+> - **Git** with proper branching strategy and semantic versioning
+> - Architecture documented with decision rationale
 >
-> **📊 Data Science Track:** **End-to-End Data Pipeline**
-> - Scrape data from multiple sources
-> - Clean & transform with Pandas
-> - Analyze & visualize insights
-> - Build predictive model with Scikit-Learn
-> - Serve predictions via FastAPI
-> - Dashboard with Plotly Dash
->
-> **🤖 ML/AI Track:** **AI-Powered Content Platform**
-> - Build a content generation/summarization tool
-> - Integrate OpenAI API / Hugging Face models
-> - FastAPI backend for model serving
-> - Fine-tune a model on custom data
-> - Deploy with Docker + monitoring
->
-> **⚙️ Automation Track:** **Smart Office Automation Suite**
-> - Auto-generate reports (Excel + PDF)
-> - Email digest automation
-> - File organizer & backup system
-> - Web scraping for market data
-> - CLI dashboard with `rich`
-> - Scheduled via APScheduler
+> **Why:** Small enough to finish, complex enough to demonstrate all Phase 1 skills — clean code, design patterns, testing, databases, Docker, CI/CD, networking, and infrastructure.
+
+---
+
+## ✅ After Completing This Roadmap — You Can:
+- [ ] Write clean, testable, maintainable, Pythonic code
+- [ ] Apply appropriate design patterns with justification
+- [ ] Understand Python internals, concurrency (async, threading, multiprocessing), and memory management
+- [ ] Solve DSA problems confidently in Python
+- [ ] Design normalized/denormalized data models
+- [ ] Work fluently with SQL, raw DB access, and SQLAlchemy ORM
+- [ ] Understand NoSQL concepts and CAP theorem
+- [ ] Explain networking and infrastructure fundamentals
+- [ ] Containerize applications with Docker and Docker Compose
+- [ ] Set up CI/CD pipelines with GitHub Actions
+- [ ] Use Git professionally with proper branching strategies
+- [ ] Write comprehensive tests (unit, integration, BDD, TDD)
+- [ ] Use type hints, linters, and static analysis professionally
+- [ ] **You are fully ready for Phase 2: FastAPI & Architectural Thinking**
 
 ---
 
 ## 📋 Quick Reference Summary
 
-```
-Phase  1  ➜  Foundation & Basics              🟢
-Phase  2  ➜  OOP Mastery                       🔵
-Phase  3  ➜  Core Python Essentials            🟡
-Phase  4  ➜  Advanced Python Features          🟠
-Phase  5  ➜  DSA in Python                     🔴
-Phase  6  ➜  Design Patterns & Clean Code      🟣
-Phase  7  ➜  Testing, Tooling & DevOps         ⚫
-Phase  8  ➜  Databases & Data Access           🔶
-Phase  9  ➜  Web Dev (FastAPI/Django/Flask)     🔷
-Phase 10  ➜  Specialization & Production       💎
-```
-
----
-
-## 🗺️ Python Career Paths After Completion
-
-```
-┌────────────────────────────────────────────────────────────┐
-│                     Python Developer                       │
-├───────────────┬───────────────┬────────────────────────────┤
-│  Backend API  │  Full Stack   │    Data Scientist          │
-│  (FastAPI /   │  (Django +    │    (Pandas, NumPy,         │
-│   Django)     │   React/Vue)  │     Matplotlib)            │
-├───────────────┼───────────────┼────────────────────────────┤
-│  ML / AI      │  Data         │    DevOps /                │
-│  Engineer     │  Engineer     │    Platform Engineer       │
-│  (PyTorch,    │  (Airflow,    │    (Docker, CI/CD,         │
-│   TensorFlow) │   Spark, ETL) │     Kubernetes)            │
-├───────────────┼───────────────┼────────────────────────────┤
-│  Automation   │  Cyber        │    Quantitative            │
-│  Engineer     │  Security     │    Finance                 │
-│  (Scripting,  │  (Pen Testing,│    (Algo Trading,          │
-│   Web Scrape) │   Forensics)  │     Risk Analysis)         │
-├───────────────┼───────────────┼────────────────────────────┤
-│  Cloud        │  NLP / LLM    │    Game Dev /              │
-│  Engineer     │  Engineer     │    Computer Vision         │
-│  (AWS Lambda, │  (LangChain,  │    (Pygame, OpenCV,        │
-│   Serverless) │   HuggingFace)│     MediaPipe)             │
-└───────────────┴───────────────┴────────────────────────────┘
-```
-
----
-
-## 📚 Recommended Resources
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    📖 BOOKS                             │
-├─────────────────────────────────────────────────────────┤
-│  Beginner    → "Automate the Boring Stuff" (Al Sweigart)│
-│  Core        → "Python Crash Course" (Eric Matthes)     │
-│  Advanced    → "Fluent Python" (Luciano Ramalho)        │
-│  Expert      → "Python Cookbook" (David Beazley)         │
-│  Patterns    → "Architecture Patterns w/ Python"        │
-│  DSA         → "Grokking Algorithms" (Bhargava)         │
-├─────────────────────────────────────────────────────────┤
-│                    🌐 PLATFORMS                         │
-├─────────────────────────────────────────────────────────┤
-│  Practice    → LeetCode, HackerRank, Codewars           │
-│  Projects    → Real Python, freeCodeCamp                 │
-│  Docs        → docs.python.org (Official)                │
-│  Videos      → Corey Schafer, ArjanCodes, mCoding        │
-└─────────────────────────────────────────────────────────┘
-```
-
----
-
-> **⏱ Estimated Timeline:** 6–12 months (varies by specialization track)
-> **💡 Pro Tip:** Python rewards those who build. Every concept you learn — immediately apply it in a mini-project. The Pythonic way is to *learn by doing.*
-
----
-
-*Want me to deep dive into any specific phase, module, specialization track, or create a week-by-week study plan?* 🚀
